@@ -17,9 +17,14 @@
   </details>
 </blockquote>
 
+
+
 ## Epimorphism Neo
 
-###### We make allthings neo.
+> We make allthings neo.
+
+<img alt="GitHub" height="56" src="https://cdn.jsdelivr.net/npm/@intergrav/devins-badges@3/assets/cozy/available/github_vector.svg">
+
 
 This mod is rebirth version for Epimorphism Core.  
 We have more new plans for this phase, dont forget your Star and Watch.  
@@ -38,3 +43,6 @@ If you are Chinese Player, Join us QQ Group to get latest updates.
 
 No English official discussion platform now, you can go to issues tracker.  
 Discord Server in preparation.
+
+## License
+*Epimorphism Neo* is licensed under the GNU Affero General Public License v3.0.
