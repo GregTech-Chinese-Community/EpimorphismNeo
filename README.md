@@ -1,18 +1,40 @@
-## Og's TemplateDevEnv
+> [!IMPORTANT]
+> This project is Heavy WIP! Conservation your Save please!
 
-Forked by CleanroomMC/TemplateDevEnv
+<blockquote>
+  <details>
+    <summary>
+      <code>あ ←→ A</code>
+    </summary>
+    <!--Head-->
+    &emsp;&ensp;<sub><b>Epimorphism</b> supports the following languages.</sub>
+    <br />
+    <!--Body-->
+    <br />
+    &emsp;&ensp;English
+    <br />
+    &emsp;&ensp;<a href="/docs/README_zh.md">简体中文</a>
+  </details>
+</blockquote>
 
-Template workspace for modding Minecraft 1.12.2. Licensed under MIT, it is made for public use.
+## Epimorphism Neo
 
-This template currently utilizies **Gradle 8.1.1** + **[RetroFuturaGradle](https://github.com/GTNewHorizons/RetroFuturaGradle) 1.3.19** + **Forge 14.23.5.2860**.
+###### We make allthings neo.
 
-With **coremod and mixin support** that is easy to configure.
+This mod is rebirth version for Epimorphism Core.  
+We have more new plans for this phase, dont forget your Star and Watch.  
 
-### Instructions:
+Stay tuned for the latest updates!
 
-1. Click `use this template` at the top.
-2. Clone the repository you have created with this template.
-3. In the local repository, run the command `gradlew setupDecompWorkspace`
-4. Open the project folder in IDEA.
-5. Right-click in IDEA `build.gradle` of your project, and select `Link Gradle Project`, after completion, hit `Refresh All` in the gradle tab on the right.
-6. Run `gradlew runClient` and `gradlew runServer`, or use the auto-imported run configurations in IntelliJ like `1. Run Client`.
+## Projects
+- [ ] More features, recipes and functions.
+- [ ] Other mod Support &  Compatibility.
+- [ ] Voltage/Hardcode Extra & Customizable.
+- [ ] And more, more, more...
+
+## Contact
+If you are Chinese Player, Join us QQ Group to get latest updates.
+###### QQ Group Code: 915427372
+
+No English official discussion platform now, you can go to issues tracker.  
+Discord Server in preparation.
