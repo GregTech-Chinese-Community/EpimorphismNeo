@@ -1,7 +1,7 @@
 {
-	"package": "cn.gtcommunity.epimorphism.mixin",
+	"package": "${mixin_package}",
 	"required": true,
-	"refmap": "mixins.${mod_id}.refmap.json",
+	"refmap": "${mixin_refmap}",
 	"target": "@env(DEFAULT)",
 	"minVersion": "0.8.5",
 	"compatibilityLevel": "JAVA_8",
