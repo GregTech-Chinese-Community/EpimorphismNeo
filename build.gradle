@@ -16,6 +16,9 @@ plugins {
     id 'com.matthewprenger.cursegradle' version '1.4.0' apply false
     id 'com.modrinth.minotaur' version '2.+' apply false
     id 'org.jetbrains.changelog' version '2.2.0'
+    id 'org.jetbrains.kotlin.jvm' version '1.8.0'
+    id 'org.jetbrains.kotlin.kapt' version '1.8.0'
+    id 'com.google.devtools.ksp' version '1.8.0-1.0.9'
 }
 
 apply from: 'gradle/scripts/helpers.gradle'
@@ -72,6 +75,32 @@ configurations {
     implementation.extendsFrom(embed)
 }
 
+// Kotlin
+pluginManager.withPlugin('org.jetbrains.kotlin.jvm') {
+    kotlin {
+        jvmToolchain(8)
+    }
+    def disabledKotlinTaskList = [
+            "kaptGenerateStubsMcLauncherKotlin",
+            "kaptGenerateStubsPatchedMcKotlin",
+            "kaptGenerateStubsInjectedTagsKotlin",
+            "compileMcLauncherKotlin",
+            "compilePatchedMcKotlin",
+            "compileInjectedTagsKotlin",
+            "kaptMcLauncherKotlin",
+            "kaptPatchedMcKotlin",
+            "kaptInjectedTagsKotlin",
+            "kspMcLauncherKotlin",
+            "kspPatchedMcKotlin",
+            "kspInjectedTagsKotlin",
+    ]
+    tasks.configureEach { task ->
+        if (task.name in disabledKotlinTaskList) {
+            task.enabled = false
+        }
+    }
+}
+
 minecraft {
     mcVersion.set('1.12.2')
 
@@ -110,6 +139,9 @@ repositories {
         name 'CleanroomMC Maven'
         url 'https://maven.cleanroommc.com'
     }
+    maven {
+        url 'https://maven.shadowfacts.net/'
+    }
 }
 
 dependencies {
@@ -143,6 +175,9 @@ dependencies {
             transitive = false
         }
     }
+
+    compileOnlyApi "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.0"
+    implementation rfg.deobf(group: "net.shadowfacts", name: "Forgelin", version: "1.8.4")
 }
 
 apply from: 'gradle/scripts/dependencies.gradle'
