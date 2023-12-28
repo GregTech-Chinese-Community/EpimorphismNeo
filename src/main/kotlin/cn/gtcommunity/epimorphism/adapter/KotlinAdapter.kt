@@ -1,4 +1,4 @@
-package me.oganesson.modid.adapter
+package cn.gtcommunity.epimorphism.adapter
 
 import net.minecraftforge.fml.common.FMLModContainer
 import net.minecraftforge.fml.common.ILanguageAdapter

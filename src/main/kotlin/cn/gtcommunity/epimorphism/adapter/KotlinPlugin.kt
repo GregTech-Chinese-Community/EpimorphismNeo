@@ -1,6 +1,6 @@
-package me.oganesson.modid.adapter
+package cn.gtcommunity.epimorphism.adapter
 
-import me.oganesson.modid.Tags
+import cn.gtcommunity.epimorphism.Tags
 import net.minecraftforge.common.ForgeVersion
 import net.minecraftforge.fml.relauncher.IFMLLoadingPlugin
 
