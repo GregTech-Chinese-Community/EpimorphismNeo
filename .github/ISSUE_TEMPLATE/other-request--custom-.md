@@ -1,5 +1,5 @@
 ---
-name: Custom issue template
+name: Other Request (Custom)
 about: Describe this issue template's purpose here.
 title: ''
 labels: ''
